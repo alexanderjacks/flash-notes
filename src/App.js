@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
+import Routes from './Routes';
 import logo from './cards.svg';
 import './App.css';
 
@@ -19,6 +20,7 @@ function App(props) {
           </h1>
         </Navbar.Header>
       </Navbar>
+      <Routes />
     </div>
   );
 }
