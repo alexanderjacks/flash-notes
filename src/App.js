@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar } from 'react-bootstrap';
+import { Nav, NavItem, Navbar } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import Routes from './Routes';
 import logo from './cards.svg';
 import './App.css';
@@ -19,6 +20,20 @@ function App(props) {
             Flashnotes
           </h1>
         </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <LinkContainer to='/signup'>
+              <NavItem>
+                Signup
+              </NavItem>
+            </LinkContainer>
+            <LinkContainer to='/login'>
+              <NavItem>
+                Login
+              </NavItem>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
       <Routes />
     </div>
