@@ -10,15 +10,15 @@ function App(props) {
   return (
     <div className='App container'>
       <Navbar fluid collapseOnSelect>
-        <Navbar.Header>
+        <Navbar.Header className='v-align-children'>
           <Navbar.Brand>
             <Link to='/'>
               <img src={logo} className='App-logo' alt='logo' />
             </Link>
           </Navbar.Brand>
-          <h1>
+          <span className='app-title-navbar'>
             Flashnotes
-          </h1>
+          </span>
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>

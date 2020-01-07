@@ -1,13 +1,24 @@
 .App {
   text-align: center;
+  min-width: 100vw;
+  margin-left: 0;
+  background-image: linear-gradient(to top, #cfc,snow, #f8f8f8);
 }
 
-.App .navbar-brand {
+.app-title-navbar {
   font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.v-align-children {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  background-image: radial-gradient(#cfc,snow, #f8f8f8);
 }
 
 .App-logo {
-  height: 45px;
+  height: 3.1rem;
   pointer-events: none;
 }
 
