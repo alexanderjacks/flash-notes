@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Amplify from 'aws-amplify';
 import { BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import App from './App';
 import './index.css';
+import Amplify from 'aws-amplify';
 import config from './config';
 
 Amplify.configure({
