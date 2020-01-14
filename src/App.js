@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Auth } from 'aws-amplify';
 import { Link } from 'react-router-dom';
 import { Nav, NavItem, Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -7,12 +8,32 @@ import logo from './cards.svg';
 import './App.css';
 
 function App(props) {
+  const [isAuthenticating, setIsAuthenticating] = useState(true);
   const [isAuthenticated, userHasAuthenticated] = useState(false);
 
-  function handleLogout() {
+  useEffect(() => {
+    onLoad();
+  }, []);
+
+  async function onLoad() {
+    try {
+      await Auth.currentSession();
+      userHasAuthenticated(true);
+    }
+    catch(e) {
+      if (e !== 'No current user') {
+        alert(e);
+      }
+    }
+    setIsAuthenticating(false);
+  }
+
+  async function handleLogout() {
+    await Auth.signOut();
     userHasAuthenticated(false);
   }
   return (
+    !isAuthenticating && /* wait on user login */
     <div className='App container'>
       <Navbar fluid collapseOnSelect>
         <Navbar.Header className='v-align-children'>
