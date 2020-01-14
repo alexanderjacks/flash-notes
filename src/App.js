@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Auth } from 'aws-amplify';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Nav, NavItem, Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Routes from './Routes';
@@ -31,6 +31,7 @@ function App(props) {
   async function handleLogout() {
     await Auth.signOut();
     userHasAuthenticated(false);
+    props.history.push('/login'); /* redirect UX to Login */
   }
   return (
     !isAuthenticating && /* wait on user login */
@@ -66,5 +67,5 @@ function App(props) {
     </div>
   );
 }
-
-export default App;
+{/* using higher order component to grab router props */}
+export default withRouter(App);
