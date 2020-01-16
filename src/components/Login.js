@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 import LoaderButton from './LoaderButton'
 import { Auth } from 'aws-amplify';
@@ -46,9 +47,13 @@ export default function Login(props) {
           />
           <ControlLabel>Password</ControlLabel>
         </FormGroup>
+        <Link to='/login/reset'>Forgot password?
+        </Link>
         <LoaderButton
           isLoading={isLoading}
           disabled={!validateForm()}
+          text='Login'
+          loadingText='Logging in…'
           type='submit'
           bsSize='large'
           block

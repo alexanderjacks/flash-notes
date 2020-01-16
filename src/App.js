@@ -67,5 +67,5 @@ function App(props) {
     </div>
   );
 }
-{/* using higher order component to grab router props */}
+/* using higher order component to grab router props */
 export default withRouter(App);
