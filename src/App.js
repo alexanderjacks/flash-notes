@@ -44,7 +44,7 @@ function App(props) {
             </Link>
           </Navbar.Brand>
           <span className='app-title-navbar'>
-            Flashnotes
+            Trump Data
           </span>
         </Navbar.Header>
         <Navbar.Collapse>
@@ -56,7 +56,7 @@ function App(props) {
                 <NavItem>Signup</NavItem>
               </LinkContainer>
               <LinkContainer to='/login'>
-                <NavItem>Login</NavItem>
+                <NavItem><span alt='golf-emoji'>⛳️</span>&nbsp;Golfing</NavItem>
               </LinkContainer>
               </>
           }
