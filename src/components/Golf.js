@@ -5,21 +5,17 @@ import NivoCalendar from './NivoCalendar';
 import './Golf.css';
 
 export default function Golf(props) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-
   return (
     <div className='Login'>
       <Jumbotron>
         <h1>Days Trump At Golf Resorts</h1>
-        <p>To Include Holidays Without Confirmed Golfing</p>
+        <p>To Include Holidays Without Confirmed Golfing Because This White House Is Secretive About It</p>
       </Jumbotron>
+      <a href='https://trumpgolfcount.com'>Data sourced from our friends at trumpgolfcount.com
+      </a>
       <div className='nivocalendar'>
         <NivoCalendar />
       </div>
-        <a href='https://trumpgolfcount.com'>Data sourced from our friends at trumpgolfcount.com
-        </a>
     </div>
   );
 }

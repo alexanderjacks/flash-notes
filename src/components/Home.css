@@ -1,6 +1,9 @@
-.Home .lander {
+.Home .section {
   padding: 80px 0;
+  min-width: 90vw;
+  min-height: 60vh;
   text-align: center;
+  border: 2px dotted deepskyblue;
 }
 
 .Home .lander h1 {
