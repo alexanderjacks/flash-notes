@@ -38,15 +38,17 @@ function App(props) {
     <div className='App container'>
       <Navbar fluid collapseOnSelect>
         <Navbar.Header className='v-align-children'>
-          <Navbar.Brand>
+            <Navbar.Brand>
             <Link to='/'>
               <img src={logo} className='App-logo' alt='logo' />
+              </Link>
+            </Navbar.Brand>
+            <Link to='/'>
+            <span className='app-title-navbar'>
+              Trump Data
+            </span>
             </Link>
-          </Navbar.Brand>
-          <span className='app-title-navbar'>
-            Trump Data
-          </span>
-        </Navbar.Header>
+          </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
           {isAuthenticated
@@ -55,7 +57,7 @@ function App(props) {
               <LinkContainer to='/signup'>
                 <NavItem>Signup</NavItem>
               </LinkContainer>
-              <LinkContainer to='/login'>
+              <LinkContainer to='/golf'>
                 <NavItem><span alt='golf-emoji'>⛳️</span>&nbsp;Golfing</NavItem>
               </LinkContainer>
               </>

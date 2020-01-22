@@ -1,0 +1,18 @@
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  .nivocalendar {
+    width:85vw;
+    height:80vh;
+  }
+}
