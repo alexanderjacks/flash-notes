@@ -1,5 +1,5 @@
 @media all and (min-width: 480px) {
-  .Golf {
+  .Border {
     padding: 60px 0;
     display: flex;
     flex-flow: column;
@@ -7,7 +7,7 @@
     justify-content: center;
   }
 
-  .Golf form {
+  .Border form {
     margin: 0 auto;
     max-width: 320px;
   }

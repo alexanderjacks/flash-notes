@@ -54,11 +54,14 @@ function App(props) {
           {isAuthenticated
             ? <NavItem onClick={handleLogout}>Logout</NavItem>
             : <>
-              <LinkContainer to='/signup'>
-                <NavItem>Signup</NavItem>
+              <LinkContainer to='/economy'>
+                <NavItem><span alt='tractor-emoji'>🚜</span>&nbsp;Economy</NavItem>
+              </LinkContainer>
+              <LinkContainer to='/border'>
+                <NavItem><span alt='alarm-light-emoji'>🚨</span>&nbsp;Border</NavItem>
               </LinkContainer>
               <LinkContainer to='/golf'>
-                <NavItem><span alt='golf-emoji'>⛳️</span>&nbsp;Golfing</NavItem>
+                <NavItem><span alt='golf-emoji'>⛳️</span>&nbsp;Golf</NavItem>
               </LinkContainer>
               </>
           }

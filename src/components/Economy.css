@@ -1,5 +1,5 @@
 @media all and (min-width: 480px) {
-  .Golf {
+  .Economy {
     padding: 60px 0;
     display: flex;
     flex-flow: column;
@@ -7,7 +7,7 @@
     justify-content: center;
   }
 
-  .Golf form {
+  .Economy form {
     margin: 0 auto;
     max-width: 320px;
   }

@@ -2,17 +2,18 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Jumbotron } from 'react-bootstrap';
 import NivoCalendar from './NivoCalendar';
-import './Golf.css';
+import './Economy.css';
 
-export default function Deaths(props) {
+export default function Economy(props) {
   return (
-    <div className='Login'>
+    <div className='Economy'>
       <Jumbotron>
-        <h1>Deaths In American Concentration Camps</h1>
+        <h1>Economy</h1>
         <p></p>
       </Jumbotron>
-      <a href='https://trumpgolfcount.com'>Data sourced from our friends at trumpgolfcount.com
-      </a>
+
+      Here's a where we got our data on farms: <a href=''></a>
+
       <div className='nivocalendar'>
         <NivoCalendar />
       </div>

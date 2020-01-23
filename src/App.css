@@ -1,3 +1,12 @@
+.p-1 { padding: 1em; }
+.p-3 { padding: 2em; }
+.p-5 { padding: 3em; }
+
+.Jumbo {
+  background-color: white;
+  background-image: linear-gradient(black,white);
+}
+
 .App {
   min-width: 100vw;
   min-height: 100vh;
